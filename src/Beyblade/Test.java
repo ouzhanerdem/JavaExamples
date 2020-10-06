@@ -4,25 +4,23 @@ import java.util.Scanner;
 
 public class Test {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("Beyblade programına hoşgeldiniz...");
         System.out.println("Çıkış için q ya basın");
         Scanner scanner = new Scanner(System.in);
 
-        while (true){
+        while (true) {
             System.out.println("Hangi Beyblade...");
             String islem = scanner.nextLine();
             if (islem.equals("q")) {
                 System.out.println("Programdan çıkılıyor");
                 break;
-            }
-            else{
+            } else {
                 BeybladeFabrikasi fabrikasi = new BeybladeFabrikasi();
                 Beyblade beyblade = fabrikasi.beybladeUret(islem);
                 if (beyblade == null) {
                     System.out.println("Lütfen geçerli bir beyblade ismi girin...");
-                }
-                else{
+                } else {
                     beyblade.bilgilerimiGoster();
                     beyblade.saldir();
                     beyblade.kutsalCanavarOrtayaCikar();

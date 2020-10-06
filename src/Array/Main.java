@@ -2,18 +2,19 @@ package Array;
 
 public class Main {
 
-    public static void array_print(int [] array){
-        for (int i = 0; i <array.length ; i++) {
-            System.out.println("Element " + (i+1) + " değeri, " + array[i]);
+    public static void array_print(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Element " + (i + 1) + " değeri, " + array[i]);
         }
 
 
     }
-    public static double average(int[] array){
+
+    public static double average(int[] array) {
 
         int toplam = 0;
         for (int i = 0; i < array.length; i++) {
-            toplam +=  array[i];
+            toplam += array[i];
 
 
         }
@@ -21,16 +22,17 @@ public class Main {
 
         return ortalama;
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         //int[] a= new int[10];
 
         //int[] z={10,20,30,40,50};
         //System.out.println(z.length);
         //Scanner scanner = new Scanner(System.in);
 
-       // a[5] = 505050500;
-       // System.out.println(a[5]);
-        int[] o = {1,2,3,4,5,6,7,8,9,0};
+        // a[5] = 505050500;
+        // System.out.println(a[5]);
+        int[] o = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
         array_print(o);
         double ortalama = average(o);
         System.out.println(ortalama);
@@ -47,10 +49,6 @@ public class Main {
             System.out.println(a[b]);
 
         }*/
-
-
-
-
 
 
     }

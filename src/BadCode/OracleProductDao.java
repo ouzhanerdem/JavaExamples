@@ -6,7 +6,8 @@ public class OracleProductDao {
     public OracleProductDao(String connectionString) {
         this.connectionString = connectionString;
     }
-    public void add(Product product){
+
+    public void add(Product product) {
         System.out.println("Oracle Database :" + product.getName() + " eklendi.");
     }
 }

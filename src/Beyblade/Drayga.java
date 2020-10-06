@@ -1,6 +1,6 @@
 package Beyblade;
 
-public class Drayga extends Beyblade{
+public class Drayga extends Beyblade {
     private String kutsalCanavar;
 
     public Drayga(String beybladeci, int donusHizi, int saldiriGucu, String kutsalCanavar) {

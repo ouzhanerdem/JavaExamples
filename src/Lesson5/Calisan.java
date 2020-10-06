@@ -45,12 +45,14 @@ public class Calisan {
     public void setTakim(Takim takim) {
         this.takim = takim;
     }
-    public String isYap(Task task){
+
+    public String isYap(Task task) {
         return this.isim + "  " + task.getAd() + " işini yapıyor.";
     }
-    public boolean taskIsValid(Task task){
-        for (Modul teamModul: this.takim.getModul()) {
-            if (teamModul.getAd().equals(task.getModul().getAd()) ) {
+
+    public boolean taskIsValid(Task task) {
+        for (Modul teamModul : this.takim.getModul()) {
+            if (teamModul.getAd().equals(task.getModul().getAd())) {
                 return true;
             }
 

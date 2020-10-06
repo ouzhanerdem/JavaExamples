@@ -1,8 +1,6 @@
 package Homework1;
 
 
-
-
 public class Calisan {
     //Superclass
     private String isim;
@@ -14,7 +12,7 @@ public class Calisan {
         this.isim = isim;
 
         this.yas = yas;
-        this.takim=takim;
+        this.takim = takim;
     }
 
     public Calisan() {
@@ -28,7 +26,6 @@ public class Calisan {
     public void setIsim(String isim) {
         this.isim = isim;
     }
-
 
 
     public String getYas() {
@@ -46,7 +43,8 @@ public class Calisan {
     public void setTakim(String takim) {
         this.takim = takim;
     }
-    public String isYap(Task task){
+
+    public String isYap(Task task) {
         return this.isim + "  " + task.getAd() + " işini yapıyor.";
     }
 

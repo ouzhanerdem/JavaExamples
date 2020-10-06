@@ -14,9 +14,10 @@ public class Anakart {
         this.yuva_sayisi = yuva_sayisi;
         this.isletim_sistemi = isletim_sistemi;
     }
-    public void istelim_sistemi_yukle(String isletim_sistemi){
 
-        this.isletim_sistemi=isletim_sistemi;
+    public void istelim_sistemi_yukle(String isletim_sistemi) {
+
+        this.isletim_sistemi = isletim_sistemi;
 
         System.out.println("İşletim sistemi yüklendi: " + isletim_sistemi);
     }

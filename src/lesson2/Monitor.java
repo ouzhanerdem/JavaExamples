@@ -13,7 +13,8 @@ public class Monitor {
         this.boyut = boyut;
         this.resolution = resolution;
     }
-    public void monitoru_kapat(){
+
+    public void monitoru_kapat() {
         System.out.println("Monitor kapatılıyor...");
     }
 

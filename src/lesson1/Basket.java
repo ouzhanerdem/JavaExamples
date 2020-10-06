@@ -23,19 +23,21 @@ public class Basket {
     public List<LineItem> getLineItems() {
         return lineItems;
     }
-    public void addlLineItem(int id, int quantity, Product p){
-        this.lineItems.add(new LineItem(id,quantity,p));
-
-    }
 
     public void setLineItems(List<LineItem> lineItems) {
         this.lineItems = lineItems;
     }
-    public int getTotalPrice(){
 
-        int totalPrice  = 0;
+    public void addlLineItem(int id, int quantity, Product p) {
+        this.lineItems.add(new LineItem(id, quantity, p));
 
-        for (int i = 0; i <lineItems.size() ; i++) {
+    }
+
+    public int getTotalPrice() {
+
+        int totalPrice = 0;
+
+        for (int i = 0; i < lineItems.size(); i++) {
             totalPrice += lineItems.get(i).getPrice();
 
         }
@@ -48,7 +50,7 @@ public class Basket {
                 "id=" + id + "\n" +
                 ", lineItems=" + lineItems +
                 ", total price= " + getTotalPrice() +
-                '}' ;
+                '}';
     }
 
 }

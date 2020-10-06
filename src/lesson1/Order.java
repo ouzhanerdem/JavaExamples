@@ -34,26 +34,28 @@ public class Order {
     public void setBasket(Basket basket) {
         this.basket = basket;
     }
-    private void updateWalletBalance(){
-        user.getWallet().setBalance(user.getWallet().getBalance()-basket.getTotalPrice());
+
+    private void updateWalletBalance() {
+        user.getWallet().setBalance(user.getWallet().getBalance() - basket.getTotalPrice());
     }
-    private boolean orderIsSuccess(){
+
+    private boolean orderIsSuccess() {
         if (user.getWallet().getBalance() < basket.getTotalPrice()) {
             return false;
-        }
-        else {
+        } else {
             return true;
         }
     }
-    private String getOrderStatus(){
+
+    private String getOrderStatus() {
         if (!orderIsSuccess()) {
             return "Sipariş verilemedi. Yetersiz Bakiye! Mevcut Bakiye:  " + user.getWallet().getBalance();
-        }
-        else {
+        } else {
             updateWalletBalance();
             return "Sipariş verildi.";
         }
     }
+
     @Override
     public String toString() {
         return "lesson1.Order{" +

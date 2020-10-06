@@ -10,7 +10,7 @@ public class User {
         this.name = name;
         this.surname = surname;
         UserId = userId;
-        this.wallet = new Wallet(UserId,walletBalance);
+        this.wallet = new Wallet(UserId, walletBalance);
     }
 
     public String getName() {

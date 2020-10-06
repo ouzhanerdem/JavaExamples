@@ -10,7 +10,8 @@ public class Kasa {
         this.uretici = uretici;
         this.malzeme = malzeme;
     }
-    public void bilgisayari_ac(){
+
+    public void bilgisayari_ac() {
         System.out.println("Bilgisayar açılıyor...");
     }
 

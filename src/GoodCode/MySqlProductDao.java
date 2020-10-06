@@ -1,6 +1,6 @@
 package GoodCode;
 
-public class MySqlProductDao extends BaseProductDao{
+public class MySqlProductDao extends BaseProductDao {
     public MySqlProductDao(String connectionString) {
         super(connectionString);
     }

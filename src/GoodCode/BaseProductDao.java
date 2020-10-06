@@ -14,7 +14,8 @@ public class BaseProductDao {
     public void setConnectionString(String connectionString) {
         this.connectionString = connectionString;
     }
-    public void add(Product product){
+
+    public void add(Product product) {
         System.out.println("Default Database: " + product.getName());
     }
 

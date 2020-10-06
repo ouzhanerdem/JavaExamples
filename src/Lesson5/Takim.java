@@ -27,7 +27,8 @@ public class Takim {
     public void setModul(List<Modul> modul) {
         this.modul = modul;
     }
-    public void addModul(String name){
+
+    public void addModul(String name) {
         this.modul.add(new Modul(name));
     }
 

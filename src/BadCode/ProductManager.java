@@ -2,7 +2,7 @@ package BadCode;
 
 public class ProductManager {
 
-    public void add(Product product, int databaseType){
+    public void add(Product product, int databaseType) {
         //İş Katmanı
 
 
@@ -10,8 +10,7 @@ public class ProductManager {
             //Mysql
             MysqlProductDao mysqlProductDao = new MysqlProductDao("Mysql String");
             mysqlProductDao.add(product);
-        }
-        else if(databaseType ==2){
+        } else if (databaseType == 2) {
             //Oracle
             OracleProductDao oracleProductDao = new OracleProductDao("Orcacle String");
             oracleProductDao.add(product);

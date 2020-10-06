@@ -1,6 +1,6 @@
 package GoodCode;
 
-public class OracleProductDao extends BaseProductDao{
+public class OracleProductDao extends BaseProductDao {
     public OracleProductDao(String connectionString) {
         super(connectionString);
     }

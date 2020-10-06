@@ -34,15 +34,17 @@ public class Beyblade {
     public void setSaldiriGucu(int saldiriGucu) {
         this.saldiriGucu = saldiriGucu;
     }
-    public void saldir(){
+
+    public void saldir() {
         System.out.println(getBeybladeci() + " " + saldiriGucu + " ve " + donusHizi + " ile saldırıyor");
     }
-    public void kutsalCanavarOrtayaCikar(){
+
+    public void kutsalCanavarOrtayaCikar() {
         System.out.println("Kutsal yok reis");
     }
 
     public void bilgilerimiGoster() {
-        System.out.println( saldiriGucu + " , " + donusHizi);
+        System.out.println(saldiriGucu + " , " + donusHizi);
     }
 
 }

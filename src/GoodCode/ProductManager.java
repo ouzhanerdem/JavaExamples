@@ -7,7 +7,7 @@ public class ProductManager {
         this.baseProductDao = baseProductDao;
     }
 
-    public void add(Product product){
+    public void add(Product product) {
         //İş Katmanı
         baseProductDao.add(product);
         System.out.println("Ürün iş katmanı işlemleri");

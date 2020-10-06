@@ -1,6 +1,6 @@
 package Beyblade;
 
-public class Draciel extends Beyblade{
+public class Draciel extends Beyblade {
     private String kutsalCanavar;
 
     public Draciel(String beybladeci, int donusHizi, int saldiriGucu, String kutsalCanavar) {
